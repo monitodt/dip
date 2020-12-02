@@ -5,6 +5,7 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
+    "start": "node server.js",
     "lint": "vue-cli-service lint",
     "make:component": "vue-cli-service make:component",
     "make:directive": "vue-cli-service make:directive",
@@ -14,6 +15,7 @@
   },
   "dependencies": {
     "core-js": "^3.6.5",
+    "express": "^4.17.1",
     "material-components-web": "^8.0.0",
     "vue": "^2.6.11",
     "vue-router": "^3.2.0",
