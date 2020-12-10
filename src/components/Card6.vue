@@ -11,7 +11,7 @@
                 <div class="cardinfo">
                     <div class="tag">
                         <h2 class="tagh2text gilroy fs30">COVID</h2>
-                        <h4 class="tagh4text gilroy fs18">Использование I-SmartBox сводит к минимуму санитарно - эпидемиологические риски при физическом контактес курьером, так как его попросту нет.</h4>
+                        <h4 class="gilroy fs18">Использование I-SmartBox сводит к минимуму санитарно - эпидемиологические риски при физическом контактес курьером, так как его попросту нет.</h4>
                     </div>
                 </div>
 
@@ -23,13 +23,13 @@
             <div class="cardblock">
                 <div class="cardinfo">
                     <div class="tag">
-                        <h2 class="tagh2text gilroy fs30">COVID</h2>
-                        <h4 class="tagh4text gilroy fs18">Использование I-SmartBox сводит к минимуму санитарно - эпидемиологические риски при физическом контактес курьером, так как его попросту нет.</h4>
+                        <h2 class="tagh2text gilroy fs30">ЛЕГАЛЬНЫЙ БИЗНЕС</h2>
+                        <h4 class="gilroy fs18">Сокращение теневой экономики за счёт выхода микро бизнеса в легальную плоскость.</h4>
                     </div>
                 </div>
 
                 <div class="image">
-                    <img class="img" src="../assets/Rectangle1.jpg" alt=""/>
+                    <img class="img" src="../assets/Rectangle2.jpg" alt=""/>
                 </div>
             </div>
             </div>
@@ -38,26 +38,26 @@
             <div class="cardblock">
                 <div class="cardinfo">
                     <div class="tag">
-                        <h2 class="tagh2text gilroy fs30">COVID</h2>
-                        <h4 class="tagh4text gilroy fs18">Использование I-SmartBox сводит к минимуму санитарно - эпидемиологические риски при физическом контактес курьером, так как его попросту нет.</h4>
+                        <h2 class="tagh2text gilroy fs30">УМНЫЙ ГОРОД</h2>
+                        <h4 class="gilroy fs18">Развитие цифровой инновационной экономики.</h4>
                     </div>
                 </div>
 
                 <div class="image">
-                    <img class="img" src="../assets/Rectangle1.jpg" alt=""/>
+                    <img class="img" src="../assets/Rectangle3.jpg" alt=""/>
                 </div>
             </div>
 
             <div class="cardblock">
                 <div class="cardinfo">
                     <div class="tag">
-                        <h2 class="tagh2text gilroy fs30">COVID</h2>
-                        <h4 class="tagh4text gilroy fs18">Использование I-SmartBox сводит к минимуму санитарно - эпидемиологические риски при физическом контактес курьером, так как его попросту нет.</h4>
+                        <h2 class="tagh2text gilroy fs30">РАБОЧИЕ МЕСТА</h2>
+                        <h4 class="gilroy fs18">Создание рабочих мест для молодежи в качестве профессии курьера.</h4>
                     </div>
                 </div>
 
                 <div class="image">
-                    <img class="img" src="../assets/Rectangle1.jpg" alt=""/>
+                    <img class="img" src="../assets/Rectangle4.jpg" alt=""/>
                 </div>
             </div>
             </div>
@@ -66,26 +66,26 @@
             <div class="cardblock">
                 <div class="cardinfo">
                     <div class="tag">
-                        <h2 class="tagh2text gilroy fs30">COVID</h2>
-                        <h4 class="tagh4text gilroy fs18">Использование I-SmartBox сводит к минимуму санитарно - эпидемиологические риски при физическом контактес курьером, так как его попросту нет.</h4>
+                        <h2 class="tagh2text gilroy fs30">ПРОИЗВОДИТЕЛЬНОСТЬ</h2>
+                        <h4 class="gilroy fs18">Повышение производительности труда транспортных и курьерских компаний.</h4>
                     </div>
                 </div>
 
                 <div class="image">
-                    <img class="img" src="../assets/Rectangle1.jpg" alt=""/>
+                    <img class="img" src="../assets/Rectangle5.jpg" alt=""/>
                 </div>
             </div>
 
             <div class="cardblock">
                 <div class="cardinfo">
                     <div class="tag">
-                        <h2 class="tagh2text gilroy fs30">COVID</h2>
-                        <h4 class="tagh4text gilroy fs18">Использование I-SmartBox сводит к минимуму санитарно - эпидемиологические риски при физическом контактес курьером, так как его попросту нет.</h4>
+                        <h2 class="tagh2text gilroy fs30">НЕТ ПОДДЕЛКАМ</h2>
+                        <h4 class="gilroy fs18">Сокращение поддельной продукции за счёт поставки один к одному.</h4>
                     </div>
                 </div>
 
                 <div class="image">
-                    <img class="img" src="../assets/Rectangle1.jpg" alt=""/>
+                    <img class="img" src="../assets/Rectangle6.jpg" alt=""/>
                 </div>
             </div>
             </div>
@@ -227,7 +227,7 @@ li {
 
 .tag {
     height: 203px;
-    width: 269px;
+    width: 290px;
     padding: 0 0 0 30px;
     
 }
@@ -250,6 +250,9 @@ li {
 
 .fs18 {
     font-size: 18px;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 21px;
 }
  
 .fs25 {
