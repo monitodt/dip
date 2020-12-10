@@ -1,5 +1,5 @@
 <template>
-<div>
+<div class="cardglobal">
     <div class="block">
         <h1 class="dblock gilroy fs72"><h1 class="dblock gilroy brown fs72">СТЕЙКХОЛДЕР </h1>«ЖИТЕЛЬ»</h1>
       </div>
@@ -49,6 +49,10 @@ font-family: 'Gilroy';
 src: url('../fonts/Gilroy-Regular.ttf');
 }
 .App {
+}
+
+.cardglobal {
+  background: #E5E5E5;
 }
 
 .card3 {

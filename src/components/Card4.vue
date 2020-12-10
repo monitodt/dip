@@ -1,5 +1,5 @@
 <template>
-<div>
+<div class="cardglobal">
     <div class="block1">
        <h1 class="dblock gilroy fs72"><h1 class="w dblock gilroy brown fs72">Стейкхолдер</h1> «Транспортные и курьерские компании»</h1>
       </div>
@@ -24,21 +24,43 @@
         <h1 class="dblock gilroy fs72"><h1 class="w dblock gilroy brown fs72">Стейкхолдер</h1>«Микро и Малый бизнес и не только»</h1>
       </div>
       <div class="card5">
-        <div>
+        <div class="group">
           
-        <div>
+        <div class="groupimage">
           <img src="../assets/Group23.svg" alt=""/>
         </div>
-        <div>
+        <div class="groupimage">
           <img src="../assets/Group24.svg" alt=""/>
         </div>
-        <div>
-          <img src="/images/005-box.svg" alt=""/>
+        <div class="groupimage">
+          <img src="../assets/005-box.svg" alt=""/>
         </div>
-        <div>
-          <img src="/images/Group22.svg" alt=""/>
+        <div class="groupimage">
+          <img src="../assets/Group22.svg" alt=""/>
         </div>
-        <div></div>
+        <h3 class="gilroy fs25 grouptext center">Альтернативный канал сбыта продукции</h3>
+        </div>
+
+        <div class="group">
+          
+        <div class="groupimage1 dblock">
+          <img src="../assets/image4.svg" alt=""/>
+        </div>
+        <div class="imageblock">
+          <div class="">
+        <div class="groupimage2 dblock">
+          <img src="../assets/image7.svg" alt=""/>
+        </div>
+        <div class="groupimage4 dblock">
+          <img src="../assets/image5.svg" alt=""/>
+        </div>
+          </div>
+        <div class="groupimage3 dblock">
+          <img src="../assets/image6.svg" alt=""/>
+        </div>
+        
+        </div>
+        <h3 class="gilroy fs25 grouptext1 center">Продуктовые маршрутизаторы (Почта, Лента, Ашан, Леруа и тд)</h3>
         </div>
       </div>
       </div>
@@ -63,6 +85,10 @@ src: url('../fonts/Gilroy-Regular.ttf');
 .App {
 }
 
+.cardglobal {
+  background: #E5E5E5;
+}
+
 .card3 {
   display: flex;
   justify-content: center;
@@ -72,6 +98,11 @@ src: url('../fonts/Gilroy-Regular.ttf');
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.card5 {
+  display: flex;
+  justify-content: center;
 }
 
 .box1 {
@@ -199,6 +230,10 @@ h4 {
   color: saddlebrown;
 }
 
+.fs25 {
+  font-size: 25px;
+}
+
 .fs72 {
   font-size: 72px;
 }
@@ -207,6 +242,10 @@ h4 {
   display: inline-block;
   letter-spacing: 0.01em;
   white-space: pre;
+}
+
+.center {
+  text-align: center;
 }
 
 .block {
@@ -219,9 +258,85 @@ h4 {
   width: 100%;
   text-align: center;
   padding: 200px 0 150px 0;
+  background: #E5E5E5;
 }
 
 .w {
   display: block;
 }
+
+.group {
+  width: 629px;
+  height: 500px;
+  margin: 0 15px 0 15px;
+  background: #FFFFFF;
+  box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.05);
+  border-radius: 20px;
+  padding: 0 0 45px 0;
+  text-align: center;
+
+}
+
+.group1 {
+  width: 629px;
+  height: 500px;
+  margin: 0 315px 0 15px;
+  background: #FFFFFF;
+  box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.05);
+  border-radius: 20px;
+  padding: 0 0 45px 0;
+
+
+}
+
+.imageblock {
+  height: 210px;
+  width: 519px;
+  margin: 0 71px 0 40px;
+  display: flex;
+  
+}
+
+.groupimage {
+  display: inline-flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 300px;
+  padding: 30px 90px 30px 90px;
+}
+.grouptext{
+  width: 300px;
+  display: inline-block;
+}
+
+.grouptext1{
+  width: 500px;
+  display: inline-block;
+}
+
+.groupimage1 {
+  padding: 22px 89px 0 197px;
+}
+
+.groupimage2 {
+  padding: 10px 0 0 0;
+  display: inline-flex;
+  align-items: flex-start;
+  
+}
+
+.groupimage3 {
+  padding: 0 0 0 11px;
+  display: inline-flex;
+}
+
+.groupimage4 {
+  width: 100%;
+  display: inline-flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  padding: 20px 0 0 0;
+  
+}
+
 </style>
