@@ -1,9 +1,19 @@
 <template>
-<div class="cardglobal">
+  <div class="cardglobal">
     <div class="block1">
-       <h1 class="dblock gilroy fs72"><h1 class="w dblock gilroy brown fs72">Стейкхолдер</h1> «Транспортные и курьерские компании»</h1>
-      </div>
-
+      <h1 class="dblock gilroy fs72">
+        <h1 class="w dblock gilroy brown fs72">Стейкхолдер</h1>
+        «Транспортные и курьерские компании»
+      </h1>
+      <div class="player">
+          <a href="#" class="sam-player">
+            <img class="play-abs" src="../assets/Video-krug.png" alt="">
+            <img class="play-abs im-play" src="../assets/Video-play.png" alt="">
+          </a>
+          <a class="player-main gilroy" href="#">Смотреть видео №2</a>
+        </div>
+    </div>
+    
       <div class="card4">
         <div class="box3">
           <div class="cardbox21">
@@ -19,51 +29,72 @@
           <img class="ultra5" src="../assets/image3.svg" alt="Bullshit"/>
         </div>
       </div>
-
-      <div class="block1">
-        <h1 class="dblock gilroy fs72"><h1 class="w dblock gilroy brown fs72">Стейкхолдер</h1>«Микро и Малый бизнес и не только»</h1>
+      <div class="box4">
+          <img class="ultra500" src="../assets/image3.svg" alt="Bullshit"/>
+        </div>
+    <div class="block1">
+      <h1 class="dblock gilroy fs72">
+        <h1 class="w dblock gilroy brown fs72">Стейкхолдер</h1>
+        «Микро и Малый бизнес и не только»
+      </h1>
+      <div class="player">
+          <a href="#" class="sam-player">
+            <img class="play-abs" src="../assets/Video-krug.png" alt="">
+            <img class="play-abs im-play" src="../assets/Video-play.png" alt="">
+          </a>
+          <a class="player-main gilroy" href="#">Смотреть видео №3</a>
+        </div>
+    </div>
+    <div class="card5">
+      <div class="group">
+        <h3 class="gilroy fs25 grouptext center mob-est">
+          Альтернативный канал сбыта продукции
+        </h3>
+        <div class="groupimage">
+          <img src="../assets/Group23.svg" alt="" />
+        </div>
+        <div class="groupimage">
+          <img src="../assets/Group24.svg" alt="" />
+        </div>
+        <div class="groupimage">
+          <img src="../assets/005-box.svg" alt="" />
+        </div>
+        <div class="groupimage">
+          <img src="../assets/Group22.svg" alt="" />
+        </div>
+        <h3 class="gilroy fs25 grouptext center mob-net">
+          Альтернативный канал сбыта продукции
+        </h3>
       </div>
-      <div class="card5">
-        <div class="group">
-          
-        <div class="groupimage">
-          <img src="../assets/Group23.svg" alt=""/>
-        </div>
-        <div class="groupimage">
-          <img src="../assets/Group24.svg" alt=""/>
-        </div>
-        <div class="groupimage">
-          <img src="../assets/005-box.svg" alt=""/>
-        </div>
-        <div class="groupimage">
-          <img src="../assets/Group22.svg" alt=""/>
-        </div>
-        <h3 class="gilroy fs25 grouptext center">Альтернативный канал сбыта продукции</h3>
-        </div>
 
-        <div class="group">
-          
-        <div class="groupimage1 dblock">
-          <img src="../assets/image4.svg" alt=""/>
+      <div class="group">
+        <div class="mob-est">
+          <h3 class="gilroy fs25 center">
+          Продуктовые маршрутизаторы (Почта, Лента, Ашан, Леруа и тд)
+        </h3>
         </div>
-        <div class="imageblock">
+        <div class="groupimage">
+          <img src="../assets/image4.svg" alt="" />
+        </div>
           <div class="">
-        <div class="groupimage2 dblock">
-          <img src="../assets/image7.svg" alt=""/>
-        </div>
-        <div class="groupimage4 dblock">
-          <img src="../assets/image5.svg" alt=""/>
-        </div>
+            <div class="groupimage">
+              <img src="../assets/image7.svg" alt="" />
+            </div>
+            <div class="groupimage">
+              <img src="../assets/image5.svg" alt="" />
+            </div>
           </div>
-        <div class="groupimage3 dblock">
-          <img src="../assets/image6.svg" alt=""/>
-        </div>
-        
-        </div>
-        <h3 class="gilroy fs25 grouptext1 center">Продуктовые маршрутизаторы (Почта, Лента, Ашан, Леруа и тд)</h3>
+          <div class="groupimage abs">
+            <img src="../assets/image6.svg" alt="" />
+          </div>
+        <div class="h3div mob-net">
+          <h3 class="gilroy fs25 grouptext center">
+          Продуктовые маршрутизаторы (Почта, Лента, Ашан, Леруа и тд)
+        </h3>
         </div>
       </div>
-      </div>
+    </div>
+  </div>
 </template>
 
 <style scoped lang="css">
@@ -74,19 +105,43 @@
 }
 
 @font-face {
-font-family: 'Bebas';
-src: url('../fonts/bebas.ttf');
+  font-family: "Bebas";
+  src: url("../fonts/bebas.ttf");
 }
 
 @font-face {
-font-family: 'Gilroy';
-src: url('../fonts/Gilroy-Regular.ttf');
+  font-family: "Gilroy";
+  src: url("../fonts/Gilroy-Regular.ttf");
 }
-.App {
+.cardglobal {
+  background: #e5e5e5;
+  overflow: hidden;
 }
 
-.cardglobal {
-  background: #E5E5E5;
+.player{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+.sam-player{
+  width: 50px;
+  height: 50px;
+  position: relative;
+}
+.play-abs{
+  position:absolute;
+  top: 0;
+  left: -25px;
+  }
+  .im-play{
+    top: 10px;
+    left: -8px;
+  }
+.player-main{
+  color: #FFC350;
+  font-size: 30px;
+  text-decoration: none;
 }
 
 .card3 {
@@ -121,26 +176,23 @@ src: url('../fonts/Gilroy-Regular.ttf');
 }
 
 .box3 {
-  width: 1085px;
-  padding: 30px 146.75px 30px 336px;
+  padding: 30px 0 30px 336px;
 }
 
 .ultra2 {
-    max-width: 100px;
-    max-height: 100px;
+  max-width: 100px;
+  max-height: 100px;
 }
 
 .ultra3 {
-    max-width: 100px;
-    max-height: 100px;
+  max-width: 100px;
+  max-height: 100px;
 }
 
 .ultra4 {
-    max-width: 100px;
-    max-height: 100px;
+  max-width: 100px;
+  max-height: 100px;
 }
-
-
 
 .ultra6 {
   display: inline-block;
@@ -174,7 +226,7 @@ h4 {
 }
 
 .cardbox2 {
-  padding: 145px 0 0 0;
+  padding: 10% 0 0 0;
   width: 718px;
   display: inline-block;
 }
@@ -196,7 +248,12 @@ h4 {
   width: 400px;
   padding: 0 0 0 30px;
 }
-
+.ultra500{
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: none;
+}
 .textcardbox21 {
   font-family: Gilroy;
   font-size: 25px;
@@ -241,7 +298,6 @@ h4 {
 .dblock {
   display: inline-block;
   letter-spacing: 0.01em;
-  white-space: pre;
 }
 
 .center {
@@ -257,8 +313,8 @@ h4 {
 .block1 {
   width: 100%;
   text-align: center;
-  padding: 200px 0 150px 0;
-  background: #E5E5E5;
+  padding: 12% 0 10% 0;
+  background: #e5e5e5;
 }
 
 .w {
@@ -269,24 +325,31 @@ h4 {
   width: 629px;
   height: 500px;
   margin: 0 15px 0 15px;
-  background: #FFFFFF;
+  background: #ffffff;
   box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.05);
   border-radius: 20px;
   padding: 0 0 45px 0;
   text-align: center;
-
+  position: relative
 }
-
+.h3div{
+  position: absolute;
+  bottom: 70px;
+  right: 40px;
+}
+.abs{
+  position: absolute;
+  bottom: -35px;
+  left: 0px;
+}
 .group1 {
   width: 629px;
   height: 500px;
   margin: 0 315px 0 15px;
-  background: #FFFFFF;
+  background: #ffffff;
   box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.05);
   border-radius: 20px;
   padding: 0 0 45px 0;
-
-
 }
 
 .imageblock {
@@ -294,7 +357,6 @@ h4 {
   width: 519px;
   margin: 0 71px 0 40px;
   display: flex;
-  
 }
 
 .groupimage {
@@ -304,12 +366,12 @@ h4 {
   width: 300px;
   padding: 30px 90px 30px 90px;
 }
-.grouptext{
+.grouptext {
   width: 300px;
   display: inline-block;
 }
 
-.grouptext1{
+.grouptext1 {
   width: 500px;
   display: inline-block;
 }
@@ -322,21 +384,95 @@ h4 {
   padding: 10px 0 0 0;
   display: inline-flex;
   align-items: flex-start;
-  
 }
 
 .groupimage3 {
   padding: 0 0 0 11px;
   display: inline-flex;
 }
-
+.mob-est{
+  padding: 30px;
+  display: none;
+}
 .groupimage4 {
   width: 100%;
   display: inline-flex;
   align-items: flex-end;
   justify-content: flex-start;
   padding: 20px 0 0 0;
-  
 }
-
+@media screen and (max-width: 1300px) {
+  .ultra5{
+    display: none;
+  }
+  .card5{
+    flex-direction: column;
+    align-items: center;
+  }
+  .group{
+    margin: 20px 0;
+  }
+  .box3 {
+  padding: 30px 146.75px 30px 336px;
+}
+}
+@media screen and (max-width: 950px) {
+.player-main{
+  display: none;
+}
+.sam-player{
+  margin-left: 50px;
+}
+}
+@media screen and (max-width: 570px) {
+  .fs72{
+    font-size: 44px;
+  }
+  .textcardbox2{
+    width: 210px;
+    font-size: 20px;
+  }
+  .box3{
+    padding: 0 146.75px 30px 520px;
+  }
+}
+@media screen and (max-width: 760px) {
+  h4{
+    font-size: 20px;
+  }
+  .ultra500{
+    display: block;
+    margin: 60px 0;
+  }
+  .box2{
+    margin-left: 80px;
+  }
+  .ultra2{
+    width: 90px;
+  top: -10px;
+  left: -100px;
+}
+.group{
+  height: auto;
+  width: auto;
+  max-width: 300px;
+}
+.mob-net{
+  display: none;
+}
+.mob-est{
+  display: block;
+}
+.abs{
+  position: relative;
+}
+}
+@media screen and (max-width: 530px) {
+  h4{
+    font-size: 16px;
+  }
+  .ultra2{
+    width: 60px;
+}
+}
 </style>

@@ -44,7 +44,7 @@ src: url('../fonts/Gilroy-Regular.ttf');
 
 .content-block2 {
     width: 100%;
-    padding: 120px 285px 0 285px;
+    padding: 10% 0px 5% 0px;
     background:#E5E5E5;
 
 }
@@ -78,7 +78,7 @@ src: url('../fonts/Gilroy-Regular.ttf');
 }
 
 .cardtext {
-    font-family: Gilroy;
+    font-family: "Gilroy", sans-serif;
     font-style: normal;
     font-weight: 500;
     font-size: 17px;
@@ -104,6 +104,7 @@ src: url('../fonts/Gilroy-Regular.ttf');
     font-size: 72px;
     line-height: 72px;
     letter-spacing: 0.01em;
+    padding: 0 15px;
 }
 
 .fs85 {
@@ -144,7 +145,7 @@ src: url('../fonts/Gilroy-Regular.ttf');
 
 
 .gilroy {
-    font-family: Gilroy;
+    font-family: 'Gilroy', sans-serif;
     font-style: normal;
     font-weight: 500;
 
@@ -152,7 +153,7 @@ src: url('../fonts/Gilroy-Regular.ttf');
 
 
 .gilroy-bold {
-    font-family: Gilroy;
+    font-family: 'Gilroy';
     font-style: normal;
     font-weight: 900;
 
@@ -186,7 +187,7 @@ src: url('../fonts/Gilroy-Regular.ttf');
     text-align: center;
     vertical-align: middle;
     display: inline-block;
-    margin: 0 15px;
+    margin: 10px 15px;
     box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.05);
     border-radius: 20px;
 }
@@ -218,5 +219,20 @@ src: url('../fonts/Gilroy-Regular.ttf');
 .cardblock2 {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+}
+@media screen and (max-width: 444px) {
+    .card2 {
+    width: 300px;
+    height: 500px;
+}
+
+.card2picture {
+    max-height: 250px;
+    max-width: 300px;
+}
+.fs18.gilroy{
+    font-size: 14px;
+}
 }
 </style>

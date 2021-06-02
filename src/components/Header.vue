@@ -1,72 +1,63 @@
 <template>
+  <div class="main-temp">
+    <MobileMenu class="mobile-menu" />
+    <div class="header">
+      <div class="logotitle">
+        <v-img :src="require('../assets/logoTitle.png')" />
+      </div>
 
-  <div class="header">
-    <div class="logotitle">
-      <v-img
-        :src="require('../assets/logoTitle.png')"
+      <div class="navbar">
+        <div class="navclick">
+          <a class="gillroy" href="#">Особенности</a>
+        </div>
 
-      />
+        <div class="navclick">
+          <a class="gillroy" href="#">Стейкхолдеры</a>
+        </div>
+
+        <div class="navclick">
+          <a class="gillroy" href="#">Мы ищем</a>
+        </div>
+
+        <div class="navclick">
+          <a class="gillroy" href="#">Контакты</a>
+        </div>
+      </div>
+
+      <div class="num">
+        <a href="tel:+79505010598" class="number">
+          +7(950) 501-05-98
+        </a>
+      </div>
     </div>
-
-
-    <div class="navbar">
-      <div class="navclick">
-        <p class="gillroy" href="">Особенности</p>
-      </div>
-
-      <div class="navclick">
-        <p class="gillroy" href="">Стейкхолдеры</p>
-      </div>
-
-      <div class="navclick">
-        <p class="gillroy" href="">Мы ищем</p>
-      </div>
-
-      <div class="navclick">
-        <p class="gillroy" href="">Контакты</p>
-      </div>
-    </div>
-    
-    <div class="num">
-      <p class="number">
-        +7(950) 501-05-98
-      </p>
-    </div>
-
-    
   </div>
-
 </template>
 
 <script>
+import MobileMenu from "./MobileMenu.vue";
 export default {
-    
-}
+  components: {
+    MobileMenu,
+  },
+};
 </script>
 
 <style scoped lang="scss">
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
 @font-face {
-font-family: 'Gilroy';
-src: url('../fonts/Gilroy-Regular.ttf');
-font-weight: normal;
-font-style: normal;
+  font-family: "Gilroy";
+  src: url("../fonts/Gilroy-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
 }
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-
 
 .header {
-  padding: 13px 315px;
+  padding: 13px 0px;
   height: 60px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   position: fixed;
-  background-color:white;
+  background-color: white;
   width: 100%;
   z-index: 1000;
 }
@@ -76,18 +67,18 @@ font-style: normal;
   max-height: 33.03px;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
 }
 
 .navbar {
-  width: 616px;
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  max-width: 50%;
 }
 
 .navclick {
-  width: calc(616px/4);
+  width: calc(616px / 4);
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -97,20 +88,41 @@ font-style: normal;
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  min-width: 210px;
 }
 
 .gillroy {
-  font-family: 'Gilroy', sans-serif;
+  font-family: "Gilroy", sans-serif;
   font-weight: 500;
+  font-size: 18px;
+  text-decoration: none;
+  color: black;
+}
+.gillroy:hover {
+  color: #FFC350;
 }
 
 .number {
-font-family: 'Gilroy';
-font-style: normal;
-font-weight: bold;
-font-size: 25px;
-line-height: 30px;
-letter-spacing: 0.01em;
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 30px;
+  letter-spacing: 0.01em;
+  text-decoration: none;
+  color: #000000;
 }
 
+.mobile-menu {
+  display: none;
+}
+
+@media screen and (max-width: 1100px) {
+  .header {
+    display: none;
+  }
+  .mobile-menu {
+    display: block;
+  }
+}
 </style>

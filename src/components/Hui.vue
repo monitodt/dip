@@ -122,7 +122,6 @@ src: url('../fonts/Gilroy-Regular.ttf');
 }
 
 .box3 {
-  width: 1085px;
   padding: 30px 146.75px 30px 336px;
 }
 
