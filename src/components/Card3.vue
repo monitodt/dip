@@ -1,6 +1,6 @@
 <template>
   <div class="cardglobal">
-    <div class="block">
+    <div id="Card3" class="block">
       <h1 class="dblock gilroy fs72">
         <h1 class="dblock gilroy brown fs72">СТЕЙКХОЛДЕР <span>«ЖИТЕЛЬ»</span></h1>
         <div class="player gilroy">

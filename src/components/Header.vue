@@ -8,19 +8,19 @@
 
       <div class="navbar">
         <div class="navclick">
-          <a class="gillroy" href="#">Особенности</a>
+          <a class="gillroy" href="#Card2">Особенности</a>
         </div>
 
         <div class="navclick">
-          <a class="gillroy" href="#">Стейкхолдеры</a>
+          <a class="gillroy" href="#Card3">Стейкхолдеры</a>
         </div>
 
         <div class="navclick">
-          <a class="gillroy" href="#">Мы ищем</a>
+          <a class="gillroy" href="#Card6">Сотрудничество</a>
         </div>
 
         <div class="navclick">
-          <a class="gillroy" href="#">Контакты</a>
+          <a class="gillroy" href="#Footer">Контакты</a>
         </div>
       </div>
 

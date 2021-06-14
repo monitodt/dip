@@ -1,5 +1,5 @@
 <template>
-    <div class="content-block2">
+    <div id="Card2" class="content-block2">
             <div class="textcenter">
                 <h2 class="fs72 disi bebas">ОСОБЕННОСТЬ ПЛАТФОРМЫ <h2 class="fs72 disi brown bebas">I-SMARTBOX</h2></h2>
             </div>

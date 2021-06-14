@@ -1,5 +1,5 @@
 <template>
-  <footer class="flex-rw">
+  <footer id="Footer" class="flex-rw">
     <ul class="footer-list-top ubr-foot">
       <li></li>
       <li>
@@ -12,7 +12,7 @@
       </li>
       <li>
         <a
-          href="#"
+          href="#Card2"
           class="generic-anchor footer-list-anchor"
           itemprop="significantLink"
           >Особенности</a
@@ -20,7 +20,7 @@
       </li>
       <li>
         <a
-          href="#"
+          href="#Card3"
           class="generic-anchor footer-list-anchor"
           itemprop="significantLink"
           >Стейкхолдеры</a
@@ -29,10 +29,10 @@
 
       <li>
         <a
-          href="#"
+          href="#Card6"
           itemprop="significantLink"
           class="generic-anchor footer-list-anchor"
-          >Мы ищем</a
+          >Сотрудничество</a
         >
       </li>
     </ul>

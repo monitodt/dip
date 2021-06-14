@@ -13,10 +13,10 @@
     <a href="tel:+79505010598"><v-img class="logo-mob" :src="require('../assets/Vector.png')" /></a>
       <nav>
       <ul>
-        <li><a href="#"><label for="burger">Особенности</label></a></li>
-        <li><a href="#"><label for="burger">Стейкхолдеры</label></a></li>
-        <li><a href="#"><label for="burger">Мы ищем</label></a></li>
-        <li><a href="#"><label for="burger">Контакты</label></a></li>
+        <li><a href="#Card2"><label for="burger">Особенности</label></a></li>
+        <li><a href="#Card3"><label for="burger">Стейкхолдеры</label></a></li>
+        <li><a href="#Card6"><label for="burger">Сотрудничество</label></a></li>
+        <li><a href="#Footer"><label for="burger">Контакты</label></a></li>
       </ul>
     </nav>
   </div>

@@ -125,20 +125,19 @@
         <h1 class="dblock bebas fs72">ЧТО СДЕЛАНО</h1>
       </div>
       <div class="car dlya-mob">
-            <div class="mob-1">
-              <img class="ultra2" src="../assets/Ellipse1.svg" alt="Bullshit" />
-              <h4 class="tagh4text gilroy fs25 fw500">
-                На сегодняшний день собрано несколько экземпляров ящиков
-                I-Smartbox.
-              </h4>
-            </div>
-            <div class="mob-2">
-              <img class="ultra2" src="../assets/Ellipse1.svg" alt="Bullshit" />
-              <h4 class="tagh4text gilroy fs25 fw500">
-                Написано программное обеспечение позволяющие:
-              </h4>
-            </div>
-          </div>
+        <div class="mob-1">
+          <img class="ultra2" src="../assets/Ellipse1.svg" alt="Bullshit" />
+          <h4 class="tagh4text gilroy fs25 fw500">
+            На сегодняшний день собрано несколько экземпляров ящиков I-Smartbox.
+          </h4>
+        </div>
+        <div class="mob-2">
+          <img class="ultra2" src="../assets/Ellipse1.svg" alt="Bullshit" />
+          <h4 class="tagh4text gilroy fs25 fw500">
+            Написано программное обеспечение позволяющие:
+          </h4>
+        </div>
+      </div>
 
       <div class="cardcenter1">
         <div class="box1">
@@ -185,33 +184,107 @@
           </div>
         </div>
       </div>
-      <div class="block5">
+      <div id="Card6" class="block5">
         <h1 class="dblock bebas fs72">
+          Сотрудничество с
           <h1 class="dblock bebas brown fs72">I-SmartBox</h1>
-          ТРЕБУЮТСЯ
         </h1>
-      </div>
-      <div class="cardcenter2">
-        <div class="carddown">
-          <h3 class="tagcard">ИНВЕСТОРЫ</h3>
-          <div class="inpbutt">
-            <input class="inputbox" placeholder="%" />
-            <button class="buttonbox">Купить</button>
+
+        <div class="cardcenter2">
+          <div class="carddown">
+            <div>
+              <p>
+                Поставьте постамат у себя в магазине/торговом центре и
+                получайте пассивный доход с каждого заказа
+              </p>
+              <p>
+                Укажите свои ФИО, контактный телефон и адрес, куда можно
+                разместить постамат и с вами свяжется наш сотрудник для
+                уточнения информации
+              </p>
+            </div>
+            <div class="inpbutt">
+              <form>
+                <input
+                  class="form-input"
+                  placeholder="ФИО"
+                  required
+                  type="text"
+                  v-model="fullname"
+                />
+
+                <imask-input
+                  class="form-input"
+                  v-model="number"
+                  :mask="mask"
+                  radix="."
+                  placeholder="Контактный номер"
+                />
+                <input
+                  class="form-input"
+                  placeholder="Адрес размещения"
+                  required
+                  type="text"
+                  v-model="address"
+                />
+
+                <button
+                  @click="sendUserRequest()"
+                  class="buttonbox"
+                  type="button"
+                >
+                  Отправить
+                </button>
+              </form>
+            </div>
           </div>
-        </div>
-        <div class="carddown">
-          <h3 class="tagcard1">ПРОИЗВОДИТЕЛИ</h3>
-          <h4 class="textcard">
-            Производители продукции готовый реализовывать товары через систему
-            I-SmartBox.
-          </h4>
-        </div>
-        <div class="carddown">
-          <h3 class="tagcard2">ПОТЕНЦИАЛЬНЫЕ СОУЧРЕДИТЕЛИ</h3>
-          <h4 class="textcard1">
-            back и front разработчики. дизайнеры: промышленный, ux/ui, юристы,
-            CEO продвижение и прочие креативные личности.
-          </h4>
+          <div class="carddown">
+            <div>
+              <p>
+                Хотите разместить постамат и компании, которые хотят
+                сотрудничать
+              </p>
+              <p>
+                Укажите свои название компании, контактный телефон и адрес,
+                куда можно разместить постамат и с вами свяжется наш сотрудник
+                для уточнения информации
+              </p>
+            </div>
+            <div class="inpbutt">
+              <form>
+                <input
+                  class="form-input"
+                  placeholder="Название компании"
+                  required
+                  type="text"
+                  v-model="company"
+                />
+
+                <imask-input
+                  class="form-input"
+                  v-model="companyNumber"
+                  :mask="mask"
+                  radix="."
+                  placeholder="Контактный номер"
+                />
+                <input
+                  class="form-input"
+                  placeholder="Адрес размещения"
+                  required
+                  type="text"
+                  v-model="companyAddress"
+                />
+
+                <button
+                  @click="sendCompanyRequest()"
+                  class="buttonbox"
+                  type="submit"
+                >
+                  Отправить
+                </button>
+              </form>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -219,7 +292,40 @@
 </template>
 
 <script>
-export default {};
+import { IMaskComponent } from "vue-imask";
+
+export default {
+  data() {
+    return {
+      mask: "+7(000)000-00-00",
+      companyNumber: "",
+      number: "",
+      fullname: "",
+      companyAddress: "",
+      address: "",
+      company: "",
+    };
+  },
+  components: {
+    "imask-input": IMaskComponent,
+  },
+  methods: {
+    sendUserRequest() {
+      this.$store.dispatch("SEND", {
+        number: this.number,
+        fullname: this.fullname,
+        address: this.address,
+      });
+    },
+    sendCompanyRequest() {
+      this.$store.dispatch("SEND", {
+        number: this.companyNumber,
+        company: this.company,
+        address: this.companyAddress,
+      });
+    },
+  },
+};
 </script>
 
 <style scoped lang="scss">
@@ -238,16 +344,19 @@ export default {};
   font-family: "Gilroy";
   src: url("../fonts/Gilroy-Regular.ttf");
 }
-.mob-1, .mob-2{
-    position: relative;
+.mob-1,
+.mob-2 {
+  position: relative;
 }
-.mob-1 img, .mob-2 img {
-    position:absolute;
-    top:45px;
-    left:0;
+.mob-1 img,
+.mob-2 img {
+  position: absolute;
+  top: 45px;
+  left: 0;
 }
-.mob-1 h4, .mob-2 h4 {
-    padding-left: 40px;
+.mob-1 h4,
+.mob-2 h4 {
+  padding-left: 40px;
 }
 .player {
   display: flex;
@@ -294,16 +403,24 @@ li {
   font-weight: normal;
 }
 
+p {
+  font-size: 16px;
+  font-family: "Gilroy";
+  font-weight: 600;
+  padding: 15px 0 0 0;
+}
+
 .cardglobal {
   background: #e5e5e5;
   overflow: hidden;
 }
-.mob-1, .mob-2{
-    position: relative;
-    display: flex;
-    width: 60%;
-    margin: 0 auto;
-    align-items: center;
+.mob-1,
+.mob-2 {
+  position: relative;
+  display: flex;
+  width: 60%;
+  margin: 0 auto;
+  align-items: center;
 }
 .card6 {
   margin: 0 0 75px 0;
@@ -428,7 +545,7 @@ li {
 }
 
 .cardbox1 {
-    min-width: 600px;
+  min-width: 600px;
   margin: 0px 0 0px 8%;
 }
 
@@ -440,7 +557,7 @@ li {
 .carddown {
   min-width: 410px;
   max-width: 410px;
-  height: 273px;
+  height: 405px;
   background-color: white;
   box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.05);
   border-radius: 20px;
@@ -473,9 +590,10 @@ li {
   padding: 31px 0 0 0;
 }
 
-.inputbox {
-  width: 100px;
+.form-input {
+  width: 90%;
   height: 40px;
+  margin-top: 5px;
   border: 2px solid rgba(0, 0, 0, 0.19);
   box-sizing: border-box;
   border-radius: 5px;
@@ -484,9 +602,8 @@ li {
   font-weight: 600;
   font-size: 25px;
   line-height: 30px;
-  letter-spacing: 0.01em;
+  letter-spacing: 0.03em;
   color: rgba(0, 0, 0, 0.19);
-  text-align: right;
 }
 
 .buttonbox {
@@ -501,7 +618,8 @@ li {
   font-weight: 600;
   font-size: 25px;
   line-height: 30px;
-  margin: 0 0 0 30px;
+  float: right;
+  margin: 25px 0 0 0;
 }
 
 .textcard {
@@ -525,8 +643,8 @@ li {
   font-size: 20px;
   line-height: 23px;
 }
-.dlya-mob{
-    display: none;
+.dlya-mob {
+  display: none;
 }
 .cardcenter2 {
   display: flex;
@@ -557,6 +675,9 @@ li {
   }
 }
 @media screen and (max-width: 1090px) {
+  .buttonbox {
+    margin: 10px 0 0 0;
+  }
   .cardbox1 {
     width: 470px;
     margin: 0 0 0 0;
@@ -567,19 +688,19 @@ li {
   }
 }
 @media screen and (max-width: 950px) {
-  .dlya-weba{
-      display: none;
+  .dlya-weba {
+    display: none;
   }
-  .dlya-mob{
-      display: block;
+  .dlya-mob {
+    display: block;
   }
-  .box2 li{
-      width: 220px;
+  .box2 li {
+    width: 220px;
   }
-  .cardbox{
-      padding-top: 45px;
-      padding-left: 20%;
-      padding-right: 10px;
+  .cardbox {
+    padding-top: 45px;
+    padding-left: 20%;
+    padding-right: 10px;
   }
 }
 @media screen and (max-width: 890px) {
@@ -612,6 +733,9 @@ li {
   }
 }
 @media screen and (max-width: 950px) {
+  .buttonbox {
+    margin: 10px 0 0 0;
+  }
   .player-main {
     display: none;
   }
@@ -638,23 +762,30 @@ li {
   }
 }
 @media screen and (max-width: 570px) {
-    .fs72{
-        font-size: 42px;
-    }
+  .buttonbox {
+    margin: 20px 0 0 0;
+  }
+  .fs72 {
+    font-size: 42px;
+  }
   .carddown {
+    height: 475px;
     max-width: 310px;
     min-width: 310px;
   }
-  .box2 li{
-      width: 180px;
+  .box2 li {
+    width: 180px;
   }
-  .cardbox{
-      padding-top: 45px;
-      padding-left: 30%;
-      padding-right: 10px;
+  .cardbox {
+    padding-top: 45px;
+    padding-left: 30%;
+    padding-right: 10px;
   }
 }
 @media screen and (max-width: 460px) {
+  .buttonbox {
+    margin: 20px 0 0 0;
+  }
   .cardbox1 {
     width: 470px;
     margin: 0 0 0 -20%;
